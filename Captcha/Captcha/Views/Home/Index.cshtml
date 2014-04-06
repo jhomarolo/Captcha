@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<img src="@Url.Content("~/GerarCaptcha.ashx")" alt="Image verification" />
+
+<br />
+Resultado :  @if (@Session["imgKey"] != null)
+             {
+    @Session["imgKey"].ToString()
+             } 
